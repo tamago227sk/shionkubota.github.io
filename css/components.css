@@ -1,0 +1,361 @@
+/* ==========================================
+   Components
+========================================== */
+
+
+/* ---------------- HERO ---------------- */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at top right,
+            rgba(198,169,107,.15),
+            transparent 40%),
+        linear-gradient(
+            180deg,
+            #fdfcf8 0%,
+            #f8f7f3 100%
+        );
+}
+
+.hero::before{
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    border-radius:50%;
+
+    background:rgba(85,107,93,.06);
+
+    top:-250px;
+    right:-180px;
+
+    z-index:0;
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+    height:450px;
+
+    border-radius:50%;
+
+    background:rgba(198,169,107,.08);
+
+    left:-180px;
+    bottom:-180px;
+
+    z-index:0;
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.hero h1{
+
+    margin-top:12px;
+
+}
+
+.hero h2{
+
+    color:var(--green);
+
+    font-weight:500;
+
+}
+
+
+/* ---------------- SECTION TITLES ---------------- */
+
+.section-title{
+
+    position:relative;
+
+}
+
+.section-title::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:3px;
+
+    background:var(--gold);
+
+    margin-top:24px;
+
+}
+
+
+/* ---------------- CARDS ---------------- */
+
+.card{
+
+    border:1px solid rgba(0,0,0,.04);
+
+}
+
+.card:hover{
+
+    box-shadow:
+
+        0 22px 55px rgba(0,0,0,.12);
+
+}
+
+.card h3{
+
+    color:var(--green-dark);
+
+}
+
+.card p{
+
+    margin-bottom:0;
+
+}
+
+
+/* ---------------- PROJECTS ---------------- */
+
+.project{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border:1px solid rgba(0,0,0,.05);
+
+}
+
+.project::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:6px;
+    height:100%;
+
+    background:var(--gold);
+
+}
+
+.project:hover{
+
+    transform:translateY(-6px);
+
+    transition:var(--transition);
+
+}
+
+
+/* ---------------- ABOUT ---------------- */
+
+.about-image{
+
+    position:relative;
+
+}
+
+.about-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:95%;
+
+    height:95%;
+
+    border:2px solid var(--gold);
+
+    left:25px;
+
+    top:25px;
+
+    border-radius:var(--radius);
+
+    z-index:-1;
+
+}
+
+
+/* ---------------- BUTTONS ---------------- */
+
+.button{
+
+    box-shadow:
+
+        0 15px 30px rgba(85,107,93,.20);
+
+}
+
+.button-outline{
+
+    box-shadow:none;
+
+}
+
+.button-outline:hover{
+
+    box-shadow:
+
+        0 15px 30px rgba(85,107,93,.20);
+
+}
+
+
+/* ---------------- CONTACT ---------------- */
+
+.contact-links a{
+
+    transition:all .35s ease;
+
+}
+
+.contact-links a:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+/* ---------------- PUBLICATIONS ---------------- */
+
+.publication-list{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.publication-list li{
+
+    background:white;
+
+    padding:22px 30px;
+
+    margin-bottom:20px;
+
+    border-radius:16px;
+
+    border-left:4px solid var(--gold);
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* ---------------- MEDIA ---------------- */
+
+.coming-soon{
+
+    font-size:1.15rem;
+
+    max-width:700px;
+
+}
+
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+
+    color:var(--text-light);
+
+}
+
+footer p:first-child{
+
+    color:var(--green-dark);
+
+}
+
+
+/* ---------------- NAVBAR ---------------- */
+
+.nav-links a{
+
+    font-weight:500;
+
+}
+
+.logo{
+
+    letter-spacing:.5px;
+
+}
+
+
+/* ---------------- IMAGE PLACEHOLDER ---------------- */
+
+.about-image img{
+
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+}
+
+
+/* ---------------- SELECTION ---------------- */
+
+::selection{
+
+    background:var(--green);
+
+    color:white;
+
+}
+
+
+/* ---------------- SCROLLBAR ---------------- */
+
+::-webkit-scrollbar{
+
+    width:11px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ece9e2;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--green);
+
+    border-radius:99px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--green-dark);
+
+}
