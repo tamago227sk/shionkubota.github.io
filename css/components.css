@@ -359,3 +359,40 @@ footer p:first-child{
     background:var(--green-dark);
 
 }
+
+
+.card-link{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+.card-link:hover{
+
+    color:inherit;
+
+}
+
+.explore-link{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    color:var(--gold);
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.card:hover .explore-link{
+
+    transform:translateX(8px);
+
+}
