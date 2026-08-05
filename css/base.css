@@ -1,0 +1,608 @@
+/* ==========================================
+   Dr. Shion Kubota Website
+   Base Styles
+========================================== */
+
+/* ---------- CSS Variables ---------- */
+
+:root {
+
+    --green: #556B5D;
+    --green-dark: #314239;
+
+    --cream: #F8F7F3;
+    --white: #FFFFFF;
+
+    --gold: #C6A96B;
+
+    --text: #2F3733;
+    --text-light: #6E746F;
+
+    --border: #E7E5E0;
+
+    --shadow: 0 10px 40px rgba(0,0,0,0.08);
+
+    --radius: 18px;
+
+    --transition: 0.35s ease;
+
+    --max-width: 1180px;
+
+}
+
+
+/* ---------- Reset ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--cream);
+
+    color:var(--text);
+
+    font-family:'Inter',sans-serif;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    -webkit-font-smoothing:antialiased;
+
+    overflow-x:hidden;
+
+}
+
+
+/* ---------- Typography ---------- */
+
+h1,h2,h3,h4{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-weight:600;
+
+    line-height:1.1;
+
+    color:var(--green-dark);
+
+}
+
+h1{
+
+    font-size:clamp(4rem,8vw,6.8rem);
+
+}
+
+h2{
+
+    font-size:clamp(2.2rem,5vw,3.6rem);
+
+    margin-bottom:1rem;
+
+}
+
+h3{
+
+    font-size:2rem;
+
+    margin-bottom:.7rem;
+
+}
+
+p{
+
+    margin-bottom:1.3rem;
+
+    color:var(--text-light);
+
+}
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+/* ---------- Layout ---------- */
+
+.container{
+
+    width:min(92%, var(--max-width));
+
+    margin:auto;
+
+}
+
+.section{
+
+    padding:120px 0;
+
+}
+
+.alt-section{
+
+    background:white;
+
+}
+
+.section-title{
+
+    margin-bottom:70px;
+
+    max-width:720px;
+
+}
+
+.section-title p{
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+.section-title h2{
+
+    margin-bottom:0;
+
+}
+
+
+/* ---------- Navigation ---------- */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    backdrop-filter:blur(12px);
+
+    background:rgba(248,247,243,.82);
+
+    border-bottom:1px solid rgba(0,0,0,.04);
+
+}
+
+.navbar{
+
+    width:min(94%,1300px);
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:78px;
+
+}
+
+.logo{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:1.9rem;
+
+    color:var(--green-dark);
+
+}
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:38px;
+
+}
+
+.nav-links a{
+
+    font-size:.95rem;
+
+    color:var(--text);
+
+    position:relative;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--gold);
+
+    transition:var(--transition);
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding-top:80px;
+
+}
+
+.hero-content{
+
+    width:min(850px,90%);
+
+}
+
+.subtitle{
+
+    color:var(--gold);
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-size:.9rem;
+
+}
+
+.hero h2{
+
+    margin-top:15px;
+
+    margin-bottom:25px;
+
+}
+
+.hero-description{
+
+    max-width:620px;
+
+    margin:auto;
+
+    font-size:1.15rem;
+
+}
+
+
+/* ---------- Buttons ---------- */
+
+.button{
+
+    display:inline-block;
+
+    margin:18px 10px 0;
+
+    padding:16px 34px;
+
+    background:var(--green);
+
+    color:white;
+
+    border-radius:999px;
+
+    transition:var(--transition);
+
+    font-weight:500;
+
+}
+
+.button:hover{
+
+    transform:translateY(-3px);
+
+    background:var(--green-dark);
+
+}
+
+.button-outline{
+
+    background:transparent;
+
+    color:var(--green);
+
+    border:1px solid var(--green);
+
+}
+
+.button-outline:hover{
+
+    color:white;
+
+}
+
+
+/* ---------- About ---------- */
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1.2fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.about-image img{
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+.about-text{
+
+    font-size:1.05rem;
+
+}
+
+
+/* ---------- Cards ---------- */
+
+.card-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    padding:40px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/* ---------- Projects ---------- */
+
+.project-list{
+
+    display:grid;
+
+    gap:35px;
+
+}
+
+.project{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    padding:45px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* ---------- Publications ---------- */
+
+.publication-list{
+
+    padding-left:20px;
+
+}
+
+.publication-list li{
+
+    margin-bottom:18px;
+
+}
+
+
+/* ---------- Contact ---------- */
+
+.contact-links{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
+
+.contact-links a{
+
+    padding:14px 26px;
+
+    border-radius:999px;
+
+    background:white;
+
+    box-shadow:var(--shadow);
+
+}
+
+.contact-links a:hover{
+
+    background:var(--green);
+
+    color:white;
+
+}
+
+
+/* ---------- Footer ---------- */
+
+footer{
+
+    padding:45px 20px;
+
+    text-align:center;
+
+    border-top:1px solid var(--border);
+
+    background:white;
+
+}
+
+footer p{
+
+    margin:6px 0;
+
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:950px){
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .card-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:760px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        height:auto;
+
+        padding:18px 0;
+
+    }
+
+    .nav-links{
+
+        gap:18px;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        margin-top:12px;
+
+    }
+
+    .section{
+
+        padding:90px 0;
+
+    }
+
+    h1{
+
+        font-size:3.7rem;
+
+    }
+
+    h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .button{
+
+        display:block;
+
+        margin:16px auto;
+
+        width:220px;
+
+    }
+
+}
