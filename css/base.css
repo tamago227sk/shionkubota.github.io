@@ -331,7 +331,7 @@ header{
 
     max-width:560px;
 
-    margin:auto;
+    margin:0;
 
     font-size:1.05rem;
 
@@ -346,6 +346,16 @@ header{
     box-shadow: var(--shadow);
 }
 
+.hero-image{
+    display:flex;
+    justify-content:center;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+}
 
 /* ---------- Buttons ---------- */
 
