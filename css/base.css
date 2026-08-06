@@ -276,22 +276,18 @@ header{
 /* ---------- Hero ---------- */
 
 .hero{
-    min-height:80vh;
+    min-height:85vh;
 
     display:flex;
     align-items:center;
 
-    justify-content:flex-start;
+    text-align:left;
 
-    text-align:center;
-
-    padding-top:120px;
+    padding-top:80px;
 }
 
 .hero-content{
-
-    width:min(850px,90%);
-
+    width:min(700px,90%);
 }
 
 .subtitle{
