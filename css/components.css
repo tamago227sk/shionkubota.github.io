@@ -627,23 +627,23 @@ grid-template-columns:1fr;
 
     margin-top:90px;
 
-    padding-top:50px;
-
-    border-top:1px solid #e6e2da;
-
 }
 
 .academic-header{
 
-    margin-bottom:35px;
+    text-align:center;
+
+    margin-bottom:45px;
 
 }
 
 .academic-header h3{
 
     font-size:2rem;
+
+    font-family:"Cormorant Garamond", serif;
+
     font-weight:600;
-    margin-bottom:28px;
 
 }
 
