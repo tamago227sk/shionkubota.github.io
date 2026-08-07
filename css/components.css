@@ -635,6 +635,10 @@ text-transform:uppercase;
 
 .media-hero-image{
 
+    position:absolute;
+
+    inset:0;
+
     width:100%;
     height:100%;
 
@@ -642,12 +646,16 @@ text-transform:uppercase;
 
     object-position:center 38%;
 
+    z-index:0;
+
 }
 
 .media-overlay{
 
     position:absolute;
     inset:0;
+
+    z-index:1;
 
     background:
         linear-gradient(
@@ -657,6 +665,14 @@ text-transform:uppercase;
             rgba(0,0,0,.15) 70%,
             rgba(0,0,0,.10) 100%
         );
+
+}
+
+.media-hero .container{
+
+    position:relative;
+
+    z-index:2;
 
 }
 
