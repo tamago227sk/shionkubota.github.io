@@ -1,11 +1,17 @@
-document.querySelectorAll(".recognition-hide button").forEach(button => {
+const details = document.querySelector(".recognition-more");
 
-    button.addEventListener("click", () => {
+const summary = details.querySelector(".recognition-toggle");
 
-        const details = button.closest("details");
+details.addEventListener("toggle", () => {
 
-        details.removeAttribute("open");
+    if (details.open) {
 
-    });
+        summary.textContent = "Hide Additional Honors ↑";
+
+    } else {
+
+        summary.textContent = "View Additional Honors →";
+
+    }
 
 });
