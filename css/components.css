@@ -725,6 +725,26 @@ text-transform:uppercase;
 
 }
 
+.recognition-hide{
+
+    text-align:center;
+    margin-top:35px;
+
+}
+
+.recognition-hide button{
+
+    background:none;
+    border:none;
+
+    color:var(--gold);
+
+    font-size:1rem;
+    font-weight:600;
+
+    cursor:pointer;
+
+}
 
 
 
