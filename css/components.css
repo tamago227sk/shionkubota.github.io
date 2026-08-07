@@ -622,7 +622,8 @@ text-transform:uppercase;
 
     position:relative;
 
-    min-height:75vh;
+    height: 70vh;
+    max-height: 700px;
 
     display:flex;
     align-items:center;
