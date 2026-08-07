@@ -680,15 +680,12 @@ grid-template-columns:1fr;
 }
 
 .education-link{
-    display:inline-block;
+    display:block;
     margin-top:10px;
-
-    font-size:.92rem;
-    font-weight:600;
+    margin-bottom:18px;
 
     color:var(--gold);
-
-    transition:.25s;
+    font-weight:600;
 }
 
 .education-link:hover{
