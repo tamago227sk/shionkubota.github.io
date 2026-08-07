@@ -703,22 +703,6 @@ text-transform:uppercase;
 
 }
 
-/* Closed */
-
-.recognition-more summary::before{
-
-    content:"View Additional Honors →";
-
-}
-
-/* Open */
-
-.recognition-more[open] summary::before{
-
-    content:"Hide Additional Honors ↑";
-
-}
-
 .recognition-more > .recognition-item:first-of-type{
 
     margin-top:30px;
