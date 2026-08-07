@@ -611,6 +611,130 @@ text-transform:uppercase;
 
 
 /* ==========================================
+   Recognition
+========================================== */
+
+.recognition-list{
+
+    max-width:900px;
+
+}
+
+.recognition-item{
+
+    display:grid;
+
+    grid-template-columns:90px 1fr;
+
+    gap:40px;
+
+    padding:28px 0;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.recognition-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.recognition-year{
+
+    color:var(--gold);
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.recognition-content h3{
+
+    font-size:1.45rem;
+
+    margin-bottom:8px;
+
+}
+
+.recognition-content p{
+
+    margin:0;
+
+}
+
+
+/* ==========================================
+   Scholarships
+========================================== */
+
+.scholarship-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.scholarship-item{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:32px;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.scholarship-item:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.scholarship-item h3{
+
+    font-size:1.3rem;
+
+    margin-bottom:14px;
+
+}
+
+.scholarship-item span{
+
+    color:var(--gold);
+
+    font-weight:600;
+
+}
+
+@media(max-width:900px){
+
+    .recognition-item{
+
+        grid-template-columns:1fr;
+
+        gap:12px;
+
+    }
+
+    .scholarship-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/* ==========================================
    Media
 ========================================== */
 
