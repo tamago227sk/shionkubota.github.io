@@ -730,7 +730,13 @@ text-transform:uppercase;
 
 }
 
+.recognition-hidden{
+    display:none;
+}
 
+.recognition-hidden.open{
+    display:block;
+}
 
 
 
