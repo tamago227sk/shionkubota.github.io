@@ -618,3 +618,90 @@ grid-template-columns:1fr;
 }
 
 }
+
+
+/* ==========================================
+   Education
+========================================== */
+
+.education-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:50px;
+
+    margin-top:50px;
+
+}
+
+.education-item{
+
+    border-top:1px solid #ddd;
+
+    padding-top:24px;
+
+}
+
+.education-year{
+
+    display:block;
+
+    font-size:.85rem;
+
+    letter-spacing:2px;
+
+    color:#999;
+
+    margin-bottom:18px;
+
+    font-weight:600;
+
+}
+
+.education-item h3{
+
+    font-size:1.9rem;
+
+    margin-bottom:6px;
+
+}
+
+.education-item h4{
+
+    font-size:1.15rem;
+
+    margin-bottom:14px;
+
+}
+
+.education-item p{
+
+    color:#666;
+
+    margin-bottom:8px;
+
+}
+
+.education-note{
+
+    font-size:.95rem;
+
+    color:#888;
+
+    line-height:1.6;
+
+}
+
+@media(max-width:900px){
+
+.education-grid{
+
+grid-template-columns:1fr;
+
+gap:40px;
+
+}
+
+}
