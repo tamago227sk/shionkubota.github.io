@@ -555,23 +555,27 @@ margin-bottom:18px;
 
 .highlight-logo{
 
-height:60px;
+    height:90px;
 
-display:flex;
+    display:flex;
 
-align-items:center;
+    align-items:center;
 
-margin-bottom:28px;
+    justify-content:center;
+
+    margin-bottom:24px;
 
 }
 
 .highlight-logo img{
 
-height:48px;
+    max-height:75px;
+    max-width:140px;
 
-width:auto;
+    width:auto;
+    height:auto;
 
-object-fit:contain;
+    object-fit:contain;
 
 }
 
