@@ -713,6 +713,26 @@ grid-template-columns:1fr;
 
 }
 
+
+.profile-links{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    margin-top:40px;
+}
+
+.profile-links img{
+    height:42px;
+    width:auto;
+    opacity:.85;
+    transition:.3s;
+}
+
+.profile-links a:hover img{
+    opacity:1;
+    transform:translateY(-3px);
+}
+
 @media(max-width:900px){
 
     .education-grid{
