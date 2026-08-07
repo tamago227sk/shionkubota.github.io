@@ -1884,13 +1884,15 @@ grid-template-columns:1fr;
 
     display:block;
 
+    margin-top:20px;
+    margin-bottom:50px;
+
     font-size:.85rem;
     letter-spacing:2px;
     color:#999;
     font-weight:600;
 
 }
-
 
 .publication-links{
     display:flex;
