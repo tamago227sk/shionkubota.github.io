@@ -664,23 +664,26 @@ text-transform:uppercase;
 
 }
 
+/* ==========================================
+   Recognition Expand
+========================================== */
 
 .recognition-more{
 
-    margin-top:25px;
+    margin-top:30px;
 
 }
 
 .recognition-more summary{
 
-    cursor:pointer;
     list-style:none;
+    cursor:pointer;
+
+    display:inline-block;
 
     color:var(--gold);
 
     font-weight:600;
-
-    display:inline-block;
 
     transition:.25s;
 
@@ -700,23 +703,32 @@ text-transform:uppercase;
 
 }
 
-.recognition-more summary::after{
+/* Closed */
 
-    content:" ↓";
+.recognition-more summary::before{
 
-}
-
-.recognition-more[open] summary::after{
-
-    content:" ↑";
+    content:"View Additional Honors →";
 
 }
 
-.recognition-more .recognition-item:first-of-type{
+/* Open */
+
+.recognition-more[open] summary::before{
+
+    content:"Hide Additional Honors ↑";
+
+}
+
+.recognition-more > .recognition-item:first-of-type{
 
     margin-top:30px;
 
 }
+
+
+
+
+
 
 /* ==========================================
    Scholarships
