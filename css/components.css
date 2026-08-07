@@ -665,6 +665,59 @@ text-transform:uppercase;
 }
 
 
+.recognition-more{
+
+    margin-top:25px;
+
+}
+
+.recognition-more summary{
+
+    cursor:pointer;
+    list-style:none;
+
+    color:var(--gold);
+
+    font-weight:600;
+
+    display:inline-block;
+
+    transition:.25s;
+
+}
+
+.recognition-more summary:hover{
+
+    color:var(--green);
+
+    transform:translateX(4px);
+
+}
+
+.recognition-more summary::-webkit-details-marker{
+
+    display:none;
+
+}
+
+.recognition-more summary::after{
+
+    content:" ↓";
+
+}
+
+.recognition-more[open] summary::after{
+
+    content:" ↑";
+
+}
+
+.recognition-more .recognition-item:first-of-type{
+
+    margin-top:30px;
+
+}
+
 /* ==========================================
    Scholarships
 ========================================== */
