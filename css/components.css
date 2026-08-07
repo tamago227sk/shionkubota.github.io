@@ -619,10 +619,39 @@ grid-template-columns:1fr;
 
 }
 
-
 /* ==========================================
-   Education
+   Academic Foundation
 ========================================== */
+
+.academic-foundation{
+
+    margin-top:90px;
+
+    padding-top:50px;
+
+    border-top:1px solid #e6e2da;
+
+}
+
+.academic-header{
+
+    margin-bottom:35px;
+
+}
+
+.academic-header span{
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
 
 .education-grid{
 
@@ -632,21 +661,39 @@ grid-template-columns:1fr;
 
     gap:50px;
 
-    margin-top:50px;
+}
+
+.education-item h4{
+
+    font-size:1.1rem;
+
+    margin-bottom:10px;
 
 }
 
-.education-item{
+.degree{
 
-    border-top:1px solid #ddd;
+    font-weight:600;
 
-    padding-top:24px;
+    margin-bottom:12px;
+
+    color:var(--dark);
+
+}
+
+.education-note{
+
+    color:#666;
+
+    font-size:.95rem;
+
+    line-height:1.6;
+
+    margin-bottom:18px;
 
 }
 
 .education-year{
-
-    display:block;
 
     font-size:.85rem;
 
@@ -654,54 +701,18 @@ grid-template-columns:1fr;
 
     color:#999;
 
-    margin-bottom:18px;
-
     font-weight:600;
-
-}
-
-.education-item h3{
-
-    font-size:1.9rem;
-
-    margin-bottom:6px;
-
-}
-
-.education-item h4{
-
-    font-size:1.15rem;
-
-    margin-bottom:14px;
-
-}
-
-.education-item p{
-
-    color:#666;
-
-    margin-bottom:8px;
-
-}
-
-.education-note{
-
-    font-size:.95rem;
-
-    color:#888;
-
-    line-height:1.6;
 
 }
 
 @media(max-width:900px){
 
-.education-grid{
+    .education-grid{
 
-grid-template-columns:1fr;
+        grid-template-columns:1fr;
 
-gap:40px;
+        gap:40px;
 
-}
+    }
 
 }
