@@ -724,3 +724,71 @@ grid-template-columns:1fr;
     }
 
 }
+
+@media (max-width: 900px){
+
+.hero-content{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    gap:40px;
+
+}
+
+}
+
+@media (max-width:900px){
+
+.hero-image img{
+
+    width:220px;
+
+    max-width:70vw;
+
+}
+
+}
+
+@media (max-width:900px){
+
+.hero h1{
+
+    font-size:3rem;
+
+}
+
+.hero h2{
+
+    font-size:1.5rem;
+
+}
+
+}
+
+@media (max-width:900px){
+
+.hero-buttons{
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+}
+
+@media (max-width:900px){
+
+.hero{
+
+    min-height:auto;
+
+    padding:120px 0 70px;
+
+}
+
+}
