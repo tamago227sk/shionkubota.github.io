@@ -3,12 +3,3 @@
 @import url("animations.css");
 
 
-@media (max-width:900px){
-
-.hero{
-
-    background:red !important;
-
-}
-
-}
