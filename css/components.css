@@ -553,6 +553,28 @@ margin-bottom:18px;
 
 }
 
+.highlight-logo{
+
+height:60px;
+
+display:flex;
+
+align-items:center;
+
+margin-bottom:28px;
+
+}
+
+.highlight-logo img{
+
+height:48px;
+
+width:auto;
+
+object-fit:contain;
+
+}
+
 .highlight-card h3{
 
 margin-bottom:12px;
