@@ -648,6 +648,12 @@ text-transform:uppercase;
 
 }
 
+@media (min-width:1400px){
+    .media-hero-image{
+        object-position:center 60%;
+    }
+}
+
 .media-overlay{
 
     position:absolute;
