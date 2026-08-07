@@ -1,17 +1,17 @@
-const details = document.querySelector(".recognition-more");
+const openButton = document.querySelector(".recognition-open");
+const closeButton = document.querySelector(".recognition-close");
+const hidden = document.querySelector(".recognition-hidden");
 
-const summary = details.querySelector(".recognition-toggle");
+openButton.addEventListener("click", () => {
 
-details.addEventListener("toggle", () => {
+    hidden.classList.add("open");
+    openButton.style.display = "none";
 
-    if (details.open) {
+});
 
-        summary.textContent = "Hide Additional Honors ↑";
+closeButton.addEventListener("click", () => {
 
-    } else {
-
-        summary.textContent = "View Additional Honors →";
-
-    }
+    hidden.classList.remove("open");
+    openButton.style.display = "inline-block";
 
 });
