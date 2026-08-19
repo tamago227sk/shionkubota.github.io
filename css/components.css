@@ -2,6 +2,26 @@
    Components
 ========================================== */
 
+.language-switch {
+    padding: 7px 13px;
+
+    border: 1px solid var(--gold);
+    border-radius: 999px;
+
+    color: var(--green-dark) !important;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+.language-switch:hover {
+    background: var(--gold);
+    color: white !important;
+}
 
 /* ---------------- HERO ---------------- */
 
