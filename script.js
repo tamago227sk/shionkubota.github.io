@@ -1,38 +1,62 @@
-const openButton = document.querySelector(".recognition-open");
-const closeButton = document.querySelector(".recognition-close");
-const hidden = document.querySelector(".recognition-hidden");
+/* ==========================================
+   Recognition Expand / Collapse
+========================================== */
 
-openButton.addEventListener("click", () => {
+const recognitionOpen = document.querySelector(".recognition-open");
+const recognitionClose = document.querySelector(".recognition-close");
+const recognitionHidden = document.querySelector(".recognition-hidden");
 
-    hidden.classList.add("open");
-    openButton.style.display = "none";
+if (recognitionOpen && recognitionClose && recognitionHidden) {
 
-});
+    recognitionOpen.addEventListener("click", () => {
 
-closeButton.addEventListener("click", () => {
+        recognitionHidden.classList.add("open");
+        recognitionOpen.style.display = "none";
 
-    hidden.classList.remove("open");
-    openButton.style.display = "inline-block";
+    });
 
-});
+    recognitionClose.addEventListener("click", () => {
 
+        recognitionHidden.classList.remove("open");
+        recognitionOpen.style.display = "inline-block";
+
+    });
+
+}
+
+
+
+/* ==========================================
+   Media Archive Expand / Collapse
+========================================== */
 
 document.querySelectorAll(".archive-category").forEach(category => {
 
-    const openButton = category.querySelector(".archive-open");
-    const closeButton = category.querySelector(".archive-close");
-    const hidden = category.querySelector(".archive-hidden");
+    const archiveOpen = category.querySelector(".archive-open");
+    const archiveClose = category.querySelector(".archive-close");
+    const archiveHidden = category.querySelector(".archive-hidden");
 
-    if (!openButton || !closeButton || !hidden) return;
+    /*
+       Some archive categories don't have
+       expandable content, so skip those.
+    */
 
-    openButton.addEventListener("click", () => {
-        hidden.classList.add("open");
-        openButton.style.display = "none";
+    if (!archiveOpen || !archiveClose || !archiveHidden) {
+        return;
+    }
+
+    archiveOpen.addEventListener("click", () => {
+
+        archiveHidden.classList.add("open");
+        archiveOpen.style.display = "none";
+
     });
 
-    closeButton.addEventListener("click", () => {
-        hidden.classList.remove("open");
-        openButton.style.display = "inline-block";
+    archiveClose.addEventListener("click", () => {
+
+        archiveHidden.classList.remove("open");
+        archiveOpen.style.display = "inline-block";
+
     });
 
 });
