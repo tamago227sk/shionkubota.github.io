@@ -1456,6 +1456,167 @@ grid-template-columns:1fr;
 
 }
 
+/* ==========================================
+   Media Archive
+========================================== */
+
+.archive-category {
+    margin-bottom: 70px;
+}
+
+.archive-category h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--green);
+    margin-bottom: 25px;
+}
+
+
+/* Category navigation */
+
+.archive-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+
+    margin: 10px 0 65px;
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.archive-nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.2s;
+}
+
+.archive-nav a:hover {
+    color: var(--gold);
+}
+
+
+/* Individual archive entries */
+
+.archive-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 30px;
+
+    padding: 22px 0;
+
+    border-bottom: 1px solid #ddd;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+a.archive-item {
+    transition: 0.2s;
+}
+
+a.archive-item:hover {
+    transform: translateX(4px);
+}
+
+
+/* Year */
+
+.archive-year {
+    color: var(--gold);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+}
+
+
+/* Text */
+
+.archive-text h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+
+    margin: 0 0 3px;
+
+    color: var(--green);
+}
+
+.archive-text p {
+    margin: 0;
+
+    color: var(--text-light);
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+
+/* Expand / collapse */
+
+.archive-hidden {
+    display: none;
+}
+
+.archive-hidden.open {
+    display: block;
+}
+
+.archive-open,
+.archive-close {
+    background: none;
+    border: none;
+    padding: 0;
+
+    margin-top: 22px;
+
+    color: var(--gold);
+
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.archive-open:hover,
+.archive-close:hover {
+    color: var(--green);
+}
+
+.archive-close {
+    margin-top: 28px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .archive-nav {
+        gap: 10px 20px;
+        margin-bottom: 45px;
+    }
+
+    .archive-category {
+        margin-bottom: 55px;
+    }
+
+    .archive-item {
+        grid-template-columns: 65px 1fr;
+        gap: 15px;
+        padding: 18px 0;
+    }
+
+    .archive-text h4 {
+        font-size: 1.05rem;
+    }
+
+}
+
 /* =================================================
    HERO SLIDER — MOBILE
 ================================================= */
