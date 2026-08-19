@@ -106,7 +106,8 @@
 
 /* Main hero slide */
 
-.hero-slide:first-child {
+.hero-slide:first-child,
+.hero-clone {
     display: flex;
     align-items: center;
 }
