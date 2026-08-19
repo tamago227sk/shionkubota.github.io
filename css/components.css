@@ -1286,3 +1286,224 @@ grid-template-columns:1fr;
 
 }
 
+/* =================================================
+   HERO SLIDER — MOBILE
+================================================= */
+
+@media (max-width: 768px) {
+
+    /* Keep the overall carousel compact */
+    .hero-slider {
+        overflow: hidden;
+    }
+
+    .hero-slide {
+        width: 100%;
+        min-width: 100%;
+        flex: 0 0 100%;
+
+        padding: 70px 22px 80px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* ================= MAIN HERO ================= */
+
+    .hero-slide:first-child,
+    .hero-clone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-slide .hero-content {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        text-align: center;
+
+        gap: 28px;
+    }
+
+
+    .hero-slide .hero-text {
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+
+    .hero-slide .hero-image {
+        order: -1;
+
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .hero-slide .hero-image img {
+        width: 210px;
+        height: 210px;
+
+        max-width: 65vw;
+
+        object-fit: cover;
+
+        border-radius: 50%;
+    }
+
+
+    .hero-slide h1 {
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .hero-slide h2 {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
+
+    .hero-slide .subtitle {
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
+
+
+    .hero-slide .hero-description {
+        max-width: 420px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+
+
+    /* ================= FEATURED MEDIA ================= */
+
+    .hero-media-content {
+        width: 100%;
+        max-width: none;
+
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+
+    .hero-media-heading {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+
+    .hero-media-heading h2 {
+        font-size: 2.2rem;
+        line-height: 1.1;
+    }
+
+
+    /*
+       Important:
+       Instead of stacking all 3 cards vertically,
+       make them a compact horizontal strip.
+    */
+
+    .hero-media-content .media-grid {
+        display: flex;
+
+        gap: 16px;
+
+        width: 100%;
+
+        margin-top: 28px;
+
+        overflow-x: auto;
+
+        scroll-snap-type: x mandatory;
+
+        padding: 5px 4px 20px;
+
+        box-sizing: border-box;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+    }
+
+
+    .hero-media-content .media-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .hero-media-content .media-card {
+        flex: 0 0 78%;
+
+        max-width: 320px;
+
+        scroll-snap-align: center;
+    }
+
+
+    .hero-media-content .media-content {
+        padding: 18px;
+    }
+
+
+    .hero-media-content .media-content h3 {
+        font-size: 1.2rem;
+    }
+
+
+    .hero-media-more {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+
+
+    /* ================= CAROUSEL CONTROLS ================= */
+
+    .hero-arrow {
+        width: 34px;
+        height: 34px;
+
+        font-size: 22px;
+
+        background: rgba(255,255,255,.9);
+    }
+
+    .hero-prev {
+        left: 8px;
+    }
+
+    .hero-next {
+        right: 8px;
+    }
+
+
+    .hero-dots {
+        bottom: 20px;
+    }
+
+}
+
+
