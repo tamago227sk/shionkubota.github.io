@@ -990,6 +990,105 @@ text-transform:uppercase;
 
 }
 
+
+/* ==========================================
+   Academic Foundation
+========================================== */
+
+.academic-foundation {
+    margin-top: 90px;
+}
+
+.academic-header {
+    text-align: left;
+    margin-bottom: 45px;
+}
+
+.academic-header h3 {
+    font-size: 2rem;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+}
+
+.academic-header span {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.education-item h4 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: var(--green-dark);
+}
+
+.degree {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--dark);
+}
+
+.education-note {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.education-link {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 18px;
+
+    color: var(--gold);
+    font-weight: 600;
+
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.education-link:hover {
+    transform: translateX(4px);
+    color: var(--green);
+}
+
+.education-year {
+    display: block;
+
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: #999;
+    font-weight: 600;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .education-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .academic-foundation {
+        margin-top: 70px;
+    }
+
+}
+
 /* ==========================================
    Scholarships
 ========================================== */
