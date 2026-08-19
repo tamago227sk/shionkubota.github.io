@@ -197,7 +197,7 @@ function previousHeroSlide() {
 
     setTimeout(() => {
         isHeroTransitioning = false;
-    }, 900);
+    }, 1350);
 
 }
 
