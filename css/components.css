@@ -831,6 +831,14 @@ text-transform:uppercase;
 
 }
 
+.highlight-talk-logo {
+    height: 100px;
+}
+
+.highlight-talk-logo img {
+    max-height: 100px;
+    max-width: 200px;
+}
 
 /* ==========================================
    Recognition
