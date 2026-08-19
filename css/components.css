@@ -620,6 +620,10 @@ text-transform:uppercase;
 
 }
 
+.recognition-title{
+    margin-top:90px;
+}
+
 .recognition-item{
 
     display:grid;
