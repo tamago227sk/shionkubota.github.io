@@ -98,7 +98,7 @@ function moveHeroSlider(index, animate = true) {
     if (!heroSlidesContainer) return;
 
     heroSlidesContainer.style.transition = animate
-        ? "transform 0.9s cubic-bezier(0.65, 0, 0.35, 1)"
+        ? "transform 1.35s cubic-bezier(0.65, 0, 0.35, 1)"
         : "none";
 
     heroSlidesContainer.style.transform =
@@ -141,13 +141,13 @@ function nextHeroSlide() {
 
             isHeroTransitioning = false;
 
-        }, 900);
+        }, 1350);
 
     } else {
 
         setTimeout(() => {
             isHeroTransitioning = false;
-        }, 900);
+        }, 1350);
 
     }
 
