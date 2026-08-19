@@ -1058,6 +1058,77 @@ text-transform:uppercase;
 
 }
 
+/* ==========================================
+   Publication Links
+========================================== */
+
+.publication-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 70px;
+    margin-top: 55px;
+
+    flex-wrap: wrap;
+}
+
+.publication-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.publication-links img {
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+
+    transition: transform 0.25s ease;
+}
+
+.publication-links img:hover {
+    transform: scale(1.06);
+}
+
+
+/* Individual logo sizes */
+
+.inspire-logo {
+    height: 70px;
+}
+
+.scholar-logo {
+    height: 52px;
+}
+
+.orcid-logo {
+    height: 58px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .publication-links {
+        gap: 35px;
+        margin-top: 40px;
+    }
+
+    .inspire-logo {
+        height: 48px;
+    }
+
+    .scholar-logo {
+        height: 38px;
+    }
+
+    .orcid-logo {
+        height: 42px;
+    }
+
+}
 
 /* ==========================================
    Media
