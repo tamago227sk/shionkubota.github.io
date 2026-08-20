@@ -1873,4 +1873,26 @@ a.archive-item:hover {
 
 }
 
+html[lang="ja"] .hero h1 {
+    font-size: clamp(3.2rem, 5vw, 5.2rem);
+    line-height: 1.05;
+}
+
+html[lang="ja"] .hero h2 {
+    font-size: clamp(2rem, 3.5vw, 3.4rem);
+    line-height: 1.25;
+    max-width: 620px;
+}
+
+html[lang="ja"] .hero-description {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    max-width: 620px;
+}
+
+html[lang="ja"] .hero .subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+}
+
 
