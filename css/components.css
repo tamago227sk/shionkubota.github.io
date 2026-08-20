@@ -1923,3 +1923,9 @@ html[lang="ja"] button,
 html[lang="ja"] .language-switch {
     font-family: "Shippori Mincho", serif;
 }
+
+@media (max-width: 768px) {
+    .desktop-break {
+        display: none;
+    }
+}
