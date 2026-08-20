@@ -1895,4 +1895,25 @@ html[lang="ja"] .hero .subtitle {
     letter-spacing: 0.14em;
 }
 
+/* ==========================================
+   Japanese Typography
+========================================== */
+
+html[lang="ja"] body {
+    font-family: "Shippori Mincho", serif;
+}
+
+html[lang="ja"] h1,
+html[lang="ja"] h2,
+html[lang="ja"] h3,
+html[lang="ja"] h4 {
+    font-family: "Zen Old Mincho", serif;
+}
+
+/* Small English labels keep the original modern style */
+html[lang="ja"] .subtitle,
+html[lang="ja"] .section-title > p {
+    font-family: "Inter", sans-serif;
+}
+
 
