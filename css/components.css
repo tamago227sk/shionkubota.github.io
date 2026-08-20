@@ -1917,3 +1917,9 @@ html[lang="ja"] .section-title > p {
 }
 
 
+html[lang="ja"] .navbar,
+html[lang="ja"] .button,
+html[lang="ja"] button,
+html[lang="ja"] .language-switch {
+    font-family: "Shippori Mincho", serif;
+}
