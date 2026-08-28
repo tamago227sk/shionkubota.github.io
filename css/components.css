@@ -2075,13 +2075,15 @@ html[lang="ja"] .language-switch {
 }
 
 .pixel-description {
-  max-width: 750px;
-  margin: 35px auto 0;
+  width: 100%;
+  max-width: none;
+  margin: 35px 0 0;
 }
 
 .readout-issue {
-  max-width: 850px;
-  margin: 80px auto 40px;
+  width: 100%;
+  max-width: none;
+  margin: 80px 0 40px;
 }
 
 .readout-issue .section-title {
