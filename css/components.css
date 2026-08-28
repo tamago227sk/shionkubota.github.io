@@ -207,6 +207,21 @@
 }
 
 
+.archive-category-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(260px, 0.8fr);
+    gap: 55px;
+    align-items: start;
+}
+
+.archive-side-image img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    border-radius: 14px;
+}
+
 /* ================= SLIDER ARROWS ================= */
 
 .hero-arrow {
