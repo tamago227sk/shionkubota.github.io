@@ -117,7 +117,10 @@
     </div>
 
 
-    <!-- Traditional wire readout -->
+    <!-- ========================================= -->
+    <!-- TRADITIONAL WIRE READOUT                  -->
+    <!-- ========================================= -->
+
     <div class="about-grid readout-block">
 
       <div>
@@ -175,70 +178,117 @@
     </div>
 
 
-    <!-- Wire-readout cartoon -->
-   <figure class="readout-diagram">
+    <!-- ========================================= -->
+    <!-- LIMITATION OF PROJECTIVE READOUT           -->
+    <!-- ========================================= -->
 
-  <img src="images/projective-readout.png"
-       alt="Illustration of projective wire readout in a liquid argon TPC">
+    <div class="readout-issue">
 
-  <figcaption>
-    In a conventional wire-readout LArTPC, a three-dimensional particle
-    trajectory produces several two-dimensional projections on different
-    wire planes. These views must then be combined during reconstruction.
-  </figcaption>
+      <div class="section-title">
 
-</figure>
+        <p>THE CHALLENGE</p>
+
+        <h3>
+          When Different 3D Events Look the Same
+        </h3>
+
+      </div>
+
+      <p>
+        Projective wire readout works extremely well, but it comes with an
+        important limitation: the detector does not measure the full
+        three-dimensional position of the charge directly.
+      </p>
+
+      <p>
+        Instead, the reconstruction must determine which signals seen on
+        different wire planes belong to the same particle. For simple tracks,
+        this can be straightforward. But when an interaction contains many
+        particles, overlapping tracks, or small low-energy deposits, different
+        three-dimensional configurations can produce similar two-dimensional
+        projections.
+      </p>
+
+      <p>
+        This can introduce ambiguities in the reconstructed event and make
+        complex or low-energy interactions more difficult to interpret.
+      </p>
+
+    </div>
 
 
-<!-- Pixel readout -->
+    <!-- Wire ambiguity cartoon -->
 
-<div class="section-title pixel-title">
+    <figure class="readout-diagram">
 
-  <p>PIXELATED READOUT</p>
+      <img src="images/projective-readout.png"
+           alt="Illustration showing ambiguities in projective wire readout">
 
-  <h3>
-    Measuring the Interaction Directly in 3D
-  </h3>
+      <figcaption>
+        With projective wire readout, different three-dimensional charge
+        patterns can produce similar combinations of two-dimensional views.
+        Reconstruction must determine how the signals from each wire plane
+        should be matched together.
+      </figcaption>
 
-</div>
+    </figure>
 
-<figure class="readout-diagram">
 
-  <img src="images/pixel-readout.png"
-       alt="Illustration of pixelated charge readout in a liquid argon TPC">
+    <!-- ========================================= -->
+    <!-- PIXEL READOUT                             -->
+    <!-- ========================================= -->
 
-</figure>
+    <div class="section-title pixel-title">
 
-<div class="pixel-description">
+      <p>PIXELATED READOUT</p>
 
-  <p>
-    Pixelated readout takes a different approach. Instead of measuring
-    charge on long wires, the detector surface is divided into many small
-    independent pixels.
-  </p>
+      <h3>
+        Measuring the Interaction Directly in 3D
+      </h3>
 
-  <p>
-    Each pixel measures where charge arrives on the readout plane,
-    while the drift time provides the third coordinate. This gives
-    a direct three-dimensional measurement of the ionization pattern,
-    rather than reconstructing it from overlapping two-dimensional
-    projections.
-  </p>
+    </div>
 
-  <p>
-    For complex events, particularly those involving many short tracks
-    or low-energy particles, this can reduce reconstruction ambiguities
-    and provide a much more detailed picture of the interaction.
-  </p>
+    <figure class="readout-diagram">
 
-</div>
+      <img src="images/pixel-readout.png"
+           alt="Illustration of pixelated charge readout in a liquid argon TPC">
+
+      <figcaption>
+        Pixelated readout records the position of individual charge deposits
+        directly on the readout plane, avoiding the need to match overlapping
+        wire projections.
+      </figcaption>
+
+    </figure>
+
+
+    <div class="pixel-description">
+
+      <p>
+        Pixelated readout takes a different approach. Instead of measuring
+        charge on long wires, the detector surface is divided into many small
+        independent pixels.
+      </p>
+
+      <p>
+        Each pixel measures where charge arrives on the readout plane,
+        while the drift time provides the third coordinate. This gives
+        a direct three-dimensional measurement of the ionization pattern,
+        rather than reconstructing it from overlapping two-dimensional
+        projections.
+      </p>
+
+      <p>
+        For complex events, particularly those involving many short tracks
+        or low-energy particles, this can reduce reconstruction ambiguities
+        and provide a much more detailed picture of the interaction.
+      </p>
 
     </div>
 
   </div>
 
 </section>
-
 
 <!-- ========================================= -->
 <!-- Q-PIX                                     -->
