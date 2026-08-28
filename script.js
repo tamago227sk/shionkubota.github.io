@@ -208,7 +208,7 @@ function startHeroTimer() {
 
     heroTimer = setInterval(() => {
         nextHeroSlide();
-    }, 10000);
+    }, 4500);
 
 }
 
