@@ -99,93 +99,151 @@
 </section>
   
 <!-- ========================================= -->
-<!-- INTRODUCTION                              -->
-<!-- ========================================= -->
-
-<section class="section">
-
-<div class="container">
-
-<div class="section-title">
-
-<p>
-
-WHY DETECTOR R&amp;D?
-
-</p>
-
-<h2>
-
-Inventing Better Ways to Observe the Universe
-
-</h2>
-
-</div>
-
-<p>
-
-Particle physics advances hand-in-hand with detector technology. Every increase in precision, every new discovery, and every new experiment relies on innovations that allow us to observe particles more accurately than ever before.
-
-</p>
-
-<p>
-
-My research focuses on developing novel detector concepts for Liquid Argon Time Projection Chambers (LArTPCs), exploring new readout architectures that improve imaging capability, scalability, and sensitivity for future neutrino experiments.
-
-</p>
-
-<p>
-
-By combining detector physics, electronics, and instrumentation, I aim to develop technologies that will enable the next generation of neutrino detectors.
-
-</p>
-
-</div>
-
-</section>
-
-
-
-<!-- ========================================= -->
-<!-- PIXELATED READOUT                         -->
+<!-- FROM WIRES TO PIXELS                      -->
 <!-- ========================================= -->
 
 <section class="section alt-section">
 
-<div class="container">
+  <div class="container">
 
-<div class="section-title">
+    <div class="section-title">
 
-<p>
+      <p>LIQUID ARGON READOUT</p>
 
-PIXELATED DETECTORS
+      <h2>
+        From Projective Wire Readout to Pixels
+      </h2>
 
-</p>
+    </div>
 
-<h2>
 
-Why Move Beyond Wire Readout?
+    <!-- Traditional wire readout -->
+    <div class="about-grid readout-block">
 
-</h2>
+      <div>
 
-</div>
+        <div class="section-title">
 
-<p>
+          <p>TRADITIONAL LArTPCs</p>
 
-Traditional Liquid Argon TPCs use wire planes to reconstruct particle trajectories. While this technology has enabled tremendous scientific success, future experiments demand even higher imaging capabilities and improved pattern recognition.
+          <h3>
+            Reconstructing 3D Events from 2D Views
+          </h3>
 
-</p>
+        </div>
 
-<p>
+        <p>
+          In a liquid argon time projection chamber, a charged particle
+          passing through the detector leaves behind a trail of ionization
+          electrons. An electric field causes these electrons to drift
+          toward the detector's charge readout system.
+        </p>
 
-Pixelated readout offers true three-dimensional imaging by directly measuring charge on individual pixels. This approach can reduce reconstruction ambiguities, improve low-energy event identification, and open new possibilities for future detector designs.
+        <p>
+          Many large liquid argon detectors use planes of parallel wires
+          to collect this charge. Each wire plane observes the interaction
+          from a different angle, producing a two-dimensional projection
+          of the particle tracks.
+        </p>
 
-</p>
+        <p>
+          By combining the signals recorded by multiple wire planes with
+          the drift time of the electrons, the original three-dimensional
+          interaction can be reconstructed.
+        </p>
 
-</div>
+      </div>
+
+
+      <div>
+
+        <figure class="research-figure">
+
+          <img src="images/apa.jpg"
+               alt="Anode Plane Assembly used for wire-based liquid argon TPC readout">
+
+          <figcaption>
+            A wire-based Anode Plane Assembly (APA), where multiple
+            layers of wires record different projections of a particle
+            interaction.
+          </figcaption>
+
+        </figure>
+
+      </div>
+
+    </div>
+
+
+    <!-- Wire-readout cartoon -->
+    <figure class="readout-comparison">
+
+      <img src="images/projective-readout.png"
+           alt="Illustration of projective wire readout in a liquid argon TPC">
+
+      <figcaption>
+        In a conventional wire-readout LArTPC, a three-dimensional particle
+        trajectory produces several two-dimensional projections on different
+        wire planes. These views must then be combined during reconstruction.
+      </figcaption>
+
+    </figure>
+
+
+    <!-- Pixel readout -->
+    <div class="about-grid readout-block pixel-block">
+
+      <div>
+
+        <figure class="research-figure">
+
+          <img src="images/pixel-readout.png"
+               alt="Illustration of pixelated charge readout in a liquid argon TPC">
+
+        </figure>
+
+      </div>
+
+
+      <div>
+
+        <div class="section-title">
+
+          <p>PIXELATED READOUT</p>
+
+          <h3>
+            Measuring the Interaction Directly in 3D
+          </h3>
+
+        </div>
+
+        <p>
+          Pixelated readout takes a different approach. Instead of measuring
+          charge on long wires, the detector surface is divided into many
+          small independent pixels.
+        </p>
+
+        <p>
+          Each pixel measures where charge arrives on the readout plane,
+          while the drift time provides the third coordinate. This gives
+          a direct three-dimensional measurement of the ionization pattern,
+          rather than reconstructing it from overlapping two-dimensional
+          projections.
+        </p>
+
+        <p>
+          For complex events, particularly those involving many short tracks
+          or low-energy particles, this can reduce reconstruction ambiguities
+          and provide a much more detailed picture of the interaction.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
-
 
 
 <!-- ========================================= -->
@@ -416,101 +474,6 @@ My research aims to bridge innovative detector concepts with practical implement
 
 
 
-<!-- ========================================= -->
-<!-- CURRENT INTERESTS                         -->
-<!-- ========================================= -->
-
-<section class="section">
-
-<div class="container">
-
-<div class="section-title">
-
-<p>
-
-CURRENT INTERESTS
-
-</p>
-
-<h2>
-
-Research Directions
-
-</h2>
-
-</div>
-
-<div class="card-grid">
-
-<div class="card">
-
-<h3>
-
-Pixelated Readout
-
-</h3>
-
-<p>
-
-Developing pixel-based charge readout technologies for future Liquid Argon TPCs.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-
-Cold Electronics
-
-</h3>
-
-<p>
-
-Designing and integrating cryogenic electronics for large-scale detector systems.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-
-Detector Integration
-
-</h3>
-
-<p>
-
-Combining detector hardware, electronics, and software into complete experimental systems.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-
-Future Detector Concepts
-
-</h3>
-
-<p>
-
-Exploring innovative technologies that will enable the next generation of neutrino experiments.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
 
 
 
