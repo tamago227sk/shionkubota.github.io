@@ -2079,6 +2079,18 @@ html[lang="ja"] .language-switch {
   margin: 35px auto 0;
 }
 
+.readout-issue {
+  max-width: 850px;
+  margin: 80px auto 40px;
+}
+
+.readout-issue .section-title {
+  margin-bottom: 35px;
+}
+
+.readout-issue p {
+  line-height: 1.9;
+}
 
 /* Mobile */
 
