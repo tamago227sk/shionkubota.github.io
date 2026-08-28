@@ -1968,10 +1968,9 @@ html[lang="ja"] .language-switch {
 
 .dune-underground {
   display: grid;
-  grid-template-columns: 1.35fr 0.85fr;
+  grid-template-columns: 1fr 280px;
   gap: 45px;
   align-items: center;
-
   margin: 45px 0;
 }
 
