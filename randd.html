@@ -130,7 +130,7 @@
           <p>TRADITIONAL LArTPCs</p>
 
           <h3>
-            Reconstructing 3D Events from 2D Views
+            Reconstructing 3D from 2D 
           </h3>
 
         </div>
@@ -189,7 +189,7 @@
         <p>THE CHALLENGE</p>
 
         <h3>
-          When Different 3D Events Look the Same
+          When 2D Projections Become Ambiguous
         </h3>
 
       </div>
@@ -234,57 +234,52 @@
     </figure>
 
 
-    <!-- ========================================= -->
-    <!-- PIXEL READOUT                             -->
-    <!-- ========================================= -->
+<!-- ========================================= -->
+<!-- PIXEL READOUT                             -->
+<!-- ========================================= -->
 
-    <div class="section-title pixel-title">
+<div class="section-title pixel-title">
 
-      <p>PIXELATED READOUT</p>
+  <p>PIXELATED READOUT</p>
 
-      <h3>
-        Measuring the Interaction Directly in 3D
-      </h3>
+  <h3>
+    Measuring the Interaction Directly in 3D
+  </h3>
 
-    </div>
+</div>
 
-    <figure class="readout-diagram">
+<figure class="readout-diagram">
 
-      <img src="images/pixel-readout.png"
-           alt="Illustration of pixelated charge readout in a liquid argon TPC">
+  <img src="images/pixel-readout.png"
+       alt="Illustration of pixelated charge readout in a liquid argon TPC">
 
-      <figcaption>
-        Pixelated readout records the position of individual charge deposits
-        directly on the readout plane, avoiding the need to match overlapping
-        wire projections.
-      </figcaption>
+  <figcaption>
+    Pixelated readout records the position of individual charge deposits
+    directly on the readout plane, avoiding the need to match overlapping
+    wire projections.
+  </figcaption>
 
-    </figure>
+</figure>
 
+<div class="pixel-description">
 
-    <div class="pixel-description">
+  <p>
+    Pixelated readout takes a different approach. Instead of measuring
+    charge on long wires, the detector surface is divided into many small
+    independent pixels. Each pixel records where charge arrives, while
+    the drift time provides the third coordinate—giving a direct
+    three-dimensional picture of the interaction.
+  </p>
 
-      <p>
-        Pixelated readout takes a different approach. Instead of measuring
-        charge on long wires, the detector surface is divided into many small
-        independent pixels.
-      </p>
+  <p>
+    This approach is particularly attractive for complex and low-energy
+    events, where small or overlapping signals can be difficult to
+    reconstruct from two-dimensional projections. Developing practical
+    ways to realize this idea in liquid argon detectors has been a central
+    theme of my research.
+  </p>
 
-      <p>
-        Each pixel measures where charge arrives on the readout plane,
-        while the drift time provides the third coordinate. This gives
-        a direct three-dimensional measurement of the ionization pattern,
-        rather than reconstructing it from overlapping two-dimensional
-        projections.
-      </p>
-
-      <p>
-        For complex events, particularly those involving many short tracks
-        or low-energy particles, this can reduce reconstruction ambiguities
-        and provide a much more detailed picture of the interaction.
-      </p>
-
-    </div>
+</div>
 
   </div>
 
@@ -324,28 +319,41 @@ Q-Pix: Rethinking Liquid Argon Readout
 
 </div>
 
+<div class="section-title">
+
+  <p>MY PhD RESEARCH · HARVARD UNIVERSITY</p>
+
+  <h2>
+    Q-Pix: A New Approach to Pixelated Readout
+  </h2>
+
+</div>
+
 <p>
-
-During my PhD at Harvard University, I investigated the physics potential of Q-Pix, a novel pixelated readout architecture designed specifically for Liquid Argon Time Projection Chambers.
-
+  During my PhD at Harvard University, I explored one approach to realizing
+  this idea: <strong>Q-Pix</strong>, a novel pixelated readout architecture
+  designed for liquid argon time projection chambers.
 </p>
 
 <p>
-
-Unlike conventional wire-based readout systems, Q-Pix employs a self-triggered, asynchronous architecture in which each pixel independently records charge over time. This enables true three-dimensional imaging while preserving excellent sensitivity to low-energy interactions.
-
+  Q-Pix takes an unusual approach to reading out the detector. Rather than
+  continuously collecting signals through a conventional readout system,
+  each pixel operates independently and records the arrival of charge in
+  time. The concept is designed to provide fine-grained three-dimensional
+  imaging while remaining sensitive to very small energy deposits.
 </p>
 
 <p>
-
-My work focused on evaluating the detector's sensitivity to solar neutrinos, demonstrating its potential for precision measurements that are difficult with conventional detector designs.
-
+  My research asked what new physics such a detector could make possible.
+  Using detector simulations and reconstruction studies, I investigated
+  Q-Pix's sensitivity to low-energy neutrinos from the Sun and from
+  core-collapse supernovae.
 </p>
 
 <p>
-
-Using detailed detector simulations and reconstruction studies, I explored how pixelated readout could enhance low-energy neutrino physics and provide new opportunities for future Liquid Argon detectors.
-
+  These studies connected detector design directly to physics: exploring
+  how a new way of observing particle interactions could open new
+  opportunities for neutrino measurements.
 </p>
 
 <p>
@@ -396,22 +404,36 @@ Pixelated Charge Readout Plane (CRP)
 
 </div>
 
+<div class="section-title">
+
+  <p>FROM CONCEPT TO HARDWARE</p>
+
+  <h2>
+    Pixelated Charge Readout Plane (CRP)
+  </h2>
+
+</div>
+
 <p>
-
-At Lawrence Berkeley National Laboratory, my research continues with the development of a pixelated Charge Readout Plane (CRP) based on the <strong>LArPix</strong> readout system. While Q-Pix explored a new detector concept through simulation, the Pixelated CRP project focuses on building and validating the hardware required for future large-scale detectors.
-
+  My work on pixelated readout now continues from detector concepts
+  toward large-scale hardware. At Lawrence Berkeley National Laboratory,
+  I work on the development of a pixelated Charge Readout Plane (CRP)
+  based on the <strong>LArPix</strong> readout system.
 </p>
 
 <p>
-
-The goal is to demonstrate that pixelated readout can be successfully integrated into large Liquid Argon detectors, combining fine spatial resolution with scalable cold electronics suitable for next-generation neutrino experiments.
-
+  The project explores how pixelated charge readout can be implemented
+  at the scale required for future liquid argon detectors. Thousands of
+  individual pixels and their cryogenic electronics must operate together
+  as a reliable detector system—a very different challenge from studying
+  the concept in simulation.
 </p>
 
 <p>
-
-My work includes detector assembly, electronics integration, system commissioning, and software development for detector operation and performance studies.
-
+  My work includes detector assembly, electronics integration, system
+  commissioning, software development, and performance studies, helping
+  take pixelated liquid argon readout from an idea toward a working
+  detector technology.
 </p>
 
 </div>
@@ -431,88 +453,41 @@ My work includes detector assembly, electronics integration, system commissionin
 
 
 <!-- ========================================= -->
-<!-- DESIGN PHILOSOPHY                         -->
+<!-- LOOKING AHEAD                             -->
 <!-- ========================================= -->
 
 <section class="section">
 
-<div class="container">
+  <div class="container">
 
-<div class="section-title">
+    <div class="section-title">
 
-<p>
+      <p>LOOKING AHEAD</p>
 
-A CONTINUOUS JOURNEY
+      <h2>
+        Building Detectors for the Questions Ahead
+      </h2>
 
-</p>
+    </div>
 
-<h2>
+    <p>
+      The next generation of neutrino experiments will push detectors
+      toward larger scales, finer measurements, and sensitivity to
+      increasingly subtle signals. Reaching that potential will require
+      advances not only in detector design, but also in electronics,
+      readout, reconstruction, and the way these systems are integrated
+      at scale.
+    </p>
 
-From Detector Concepts to Working Systems
+    <p>
+      My goal is to continue working across these boundaries—from exploring
+      new detector concepts to building, commissioning, and ultimately using
+      them for physics. By connecting detector development closely with the
+      scientific questions we want to answer, I hope to help develop
+      instruments that allow us to see neutrino interactions in new ways.
+    </p>
 
-</h2>
-
-</div>
-
-<p>
-
-Although separated by different projects and institutions, my detector R&amp;D has followed a common theme: exploring new technologies that improve how we observe neutrino interactions.
-
-</p>
-
-<p>
-
-Beginning with Q-Pix during my PhD, I investigated how pixelated readout could transform Liquid Argon TPCs through novel detector architectures. Today, that vision continues through the development of Pixelated CRPs, where many of these ideas are now being implemented and tested in real detector hardware.
-
-</p>
-
-<p>
-
-This progression—from detector concepts to functioning instrumentation—illustrates how innovative ideas evolve into practical technologies capable of supporting future scientific discoveries.
-
-</p>
-
-</div>
-
-</section>
-
-  <!-- ========================================= -->
-<!-- LOOKING AHEAD                             -->
-<!-- ========================================= -->
-
-<section class="section alt-section">
-
-<div class="container">
-
-<div class="section-title">
-
-<p>
-
-LOOKING AHEAD
-
-</p>
-
-<h2>
-
-Shaping the Future of Particle Detectors
-
-</h2>
-
-</div>
-
-<p>
-
-Future neutrino experiments will demand detectors that are larger, more precise, and capable of handling increasingly complex data. Meeting these challenges requires not only incremental improvements, but also new ideas in detector design, electronics, and system integration.
-
-</p>
-
-<p>
-
-My research aims to bridge innovative detector concepts with practical implementation, transforming new technologies into reliable scientific instruments capable of enabling the next generation of discoveries in neutrino physics.
-
-</p>
-
-</div>
+  </div>
 
 </section>
 
