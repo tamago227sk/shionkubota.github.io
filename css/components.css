@@ -1962,6 +1962,60 @@ html[lang="ja"] .language-switch {
     font-weight: 600;
 }
 
+/* =========================================
+   DUNE underground section
+   ========================================= */
+
+.dune-underground {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 45px;
+  align-items: center;
+
+  margin: 45px 0;
+}
+
+.dune-underground-text p:first-child {
+  margin-top: 0;
+}
+
+.dune-underground-text p:last-child {
+  margin-bottom: 0;
+}
+
+.dune-underground-photo {
+  margin: 0;
+}
+
+.dune-underground-photo img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+.dune-underground-photo figcaption {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  opacity: 0.7;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .dune-underground {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .dune-underground-photo {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+}
+
 
 /* ==========================================
    PhD Research Blocks
