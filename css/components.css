@@ -2016,6 +2016,54 @@ html[lang="ja"] .language-switch {
 }
 
 
+.readout-block {
+  margin: 50px 0;
+  align-items: center;
+}
+
+.research-figure {
+  margin: 0;
+}
+
+.research-figure img {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+}
+
+.research-figure figcaption,
+.readout-comparison figcaption {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+.readout-comparison {
+  margin: 55px auto;
+  max-width: 950px;
+}
+
+.readout-comparison img {
+  width: 100%;
+  display: block;
+}
+
+.pixel-block {
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .readout-block {
+    margin: 35px 0;
+  }
+
+  .readout-comparison {
+    margin: 40px auto;
+  }
+}
+
+
 /* ==========================================
    PhD Research Blocks
 ========================================== */
