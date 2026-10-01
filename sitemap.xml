@@ -1,20 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
     <loc>https://shionkubota.com/</loc>
-  </url>
-
-  <url>
-    <loc>https://shionkubota.com/media.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shionkubota.com/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://shionkubota.com/jp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shionkubota.com/" />
   </url>
 
   <url>
     <loc>https://shionkubota.com/jp/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shionkubota.com/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://shionkubota.com/jp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shionkubota.com/" />
+  </url>
+
+  <url>
+    <loc>https://shionkubota.com/media.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shionkubota.com/media.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://shionkubota.com/jp/media.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shionkubota.com/media.html" />
   </url>
 
   <url>
     <loc>https://shionkubota.com/jp/media.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shionkubota.com/media.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://shionkubota.com/jp/media.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shionkubota.com/media.html" />
+  </url>
+
+  <url>
+    <loc>https://shionkubota.com/physics.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shionkubota.com/physics.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://shionkubota.com/jp/physics.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shionkubota.com/physics.html" />
+  </url>
+
+  <url>
+    <loc>https://shionkubota.com/jp/physics.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shionkubota.com/physics.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://shionkubota.com/jp/physics.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shionkubota.com/physics.html" />
+  </url>
+
+  <url>
+    <loc>https://shionkubota.com/randd.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shionkubota.com/randd.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://shionkubota.com/jp/randd.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shionkubota.com/randd.html" />
+  </url>
+
+  <url>
+    <loc>https://shionkubota.com/jp/randd.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shionkubota.com/randd.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://shionkubota.com/jp/randd.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shionkubota.com/randd.html" />
+  </url>
+
+  <url>
+    <loc>https://shionkubota.com/commissioning.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shionkubota.com/commissioning.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://shionkubota.com/jp/commissioning.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shionkubota.com/commissioning.html" />
+  </url>
+
+  <url>
+    <loc>https://shionkubota.com/jp/commissioning.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shionkubota.com/commissioning.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://shionkubota.com/jp/commissioning.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shionkubota.com/commissioning.html" />
   </url>
 
 </urlset>
